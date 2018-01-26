@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+	public Rigidbody2D
+	
 	// Use this for initialization
 	void Start () {
 		
