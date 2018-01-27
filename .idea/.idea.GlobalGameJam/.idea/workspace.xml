@@ -36,18 +36,18 @@
       <file leaf-file-name="DogController.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/scripts/DogController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="52" column="54" lean-forward="false" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
+            <state relative-caret-position="465">
+              <caret line="58" column="8" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
               <folding>
-                <marker date="1517061173482" expanded="true" signature="6:121" ph="..." />
-                <marker date="1517061173482" expanded="true" signature="165:1398" ph="{...}" />
-                <marker date="1517061173482" expanded="true" signature="430:475" ph="{...}" />
-                <marker date="1517061173482" expanded="true" signature="534:1396" ph="{...}" />
-                <marker date="1517061173482" expanded="true" signature="836:878" ph="{...}" />
-                <marker date="1517061173482" expanded="true" signature="885:929" ph="{...}" />
-                <marker date="1517061173482" expanded="true" signature="968:1008" ph="{...}" />
-                <marker date="1517061173482" expanded="true" signature="1062:1101" ph="{...}" />
-                <marker date="1517061173482" expanded="true" signature="1169:1221" ph="{...}" />
+                <marker date="1517062286613" expanded="true" signature="6:121" ph="..." />
+                <marker date="1517062286613" expanded="true" signature="165:1414" ph="{...}" />
+                <marker date="1517062286613" expanded="true" signature="430:475" ph="{...}" />
+                <marker date="1517062286613" expanded="true" signature="534:1412" ph="{...}" />
+                <marker date="1517062286613" expanded="true" signature="836:878" ph="{...}" />
+                <marker date="1517062286613" expanded="true" signature="885:929" ph="{...}" />
+                <marker date="1517062286613" expanded="true" signature="968:1008" ph="{...}" />
+                <marker date="1517062286613" expanded="true" signature="1062:1101" ph="{...}" />
+                <marker date="1517062286613" expanded="true" signature="1169:1237" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -207,12 +207,12 @@
       <option name="presentableId" value="Default" />
       <updated>1517013709901</updated>
       <workItem from="1517013714964" duration="7389000" />
-      <workItem from="1517023067018" duration="17455000" />
+      <workItem from="1517023067018" duration="18368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24844000" />
+    <option name="totallyTimeSpent" value="25757000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -360,18 +360,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/scripts/DogController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="52" column="54" lean-forward="false" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
+        <state relative-caret-position="465">
+          <caret line="58" column="8" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
           <folding>
-            <marker date="1517061173482" expanded="true" signature="6:121" ph="..." />
-            <marker date="1517061173482" expanded="true" signature="165:1398" ph="{...}" />
-            <marker date="1517061173482" expanded="true" signature="430:475" ph="{...}" />
-            <marker date="1517061173482" expanded="true" signature="534:1396" ph="{...}" />
-            <marker date="1517061173482" expanded="true" signature="836:878" ph="{...}" />
-            <marker date="1517061173482" expanded="true" signature="885:929" ph="{...}" />
-            <marker date="1517061173482" expanded="true" signature="968:1008" ph="{...}" />
-            <marker date="1517061173482" expanded="true" signature="1062:1101" ph="{...}" />
-            <marker date="1517061173482" expanded="true" signature="1169:1221" ph="{...}" />
+            <marker date="1517062286613" expanded="true" signature="6:121" ph="..." />
+            <marker date="1517062286613" expanded="true" signature="165:1414" ph="{...}" />
+            <marker date="1517062286613" expanded="true" signature="430:475" ph="{...}" />
+            <marker date="1517062286613" expanded="true" signature="534:1412" ph="{...}" />
+            <marker date="1517062286613" expanded="true" signature="836:878" ph="{...}" />
+            <marker date="1517062286613" expanded="true" signature="885:929" ph="{...}" />
+            <marker date="1517062286613" expanded="true" signature="968:1008" ph="{...}" />
+            <marker date="1517062286613" expanded="true" signature="1062:1101" ph="{...}" />
+            <marker date="1517062286613" expanded="true" signature="1169:1237" ph="{...}" />
           </folding>
         </state>
       </provider>

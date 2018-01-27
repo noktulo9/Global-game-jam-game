@@ -52,14 +52,14 @@ public class DogController : MonoBehaviour
 
 		if((int)(Dog.position.y - Player.position.y) != 0)
 		{
-			jump = new Vector2(0f,20f);
+			jump = new Vector2(0f,18f);
 		}
 		else jump = new Vector2(0f,0f);
 		
 		
 		if (DistanceToPlayer > 3)
 		{
-			Dog.velocity = Direction * Speed + jump;
+			Dog.velocity = new Vector2(Direction.x * Speed, jump.y);
 		}
 
 		transform.localRotation = Dog.velocity.x < 0 ? Quaternion.Euler(0, 0, 0) : Quaternion.Euler(0, 180, 0);
