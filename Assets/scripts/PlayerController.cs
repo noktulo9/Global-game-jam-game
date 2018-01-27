@@ -9,9 +9,6 @@ public class PlayerController : MonoBehaviour
 {
 
 	public Rigidbody2D Player;
-	public Text HorAx;
-	public Text VerAx;
-	public Text Dist;
 	public int Speed = 5;
 	public int JumpPower = 20;
 	public bool Ground = true;
