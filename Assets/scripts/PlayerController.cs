@@ -2,6 +2,7 @@
 using System.Runtime.InteropServices;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Scripting.APIUpdating;
 using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
@@ -15,6 +16,10 @@ public class PlayerController : MonoBehaviour
 	public int JumpPower = 20;
 	public bool Ground = true;
 	public LayerMask PlatformMask;
+	public Animation Anim;
+		
+	private bool _flipSide = false;
+	private SpriteRenderer _spriteRenderer;
 	                                 
 
 	private float distance = 20f;
@@ -28,6 +33,7 @@ public class PlayerController : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate ()
 	{
+		
 		
 		RaycastHit2D hit = Physics2D.Raycast(Player.position, Vector2.down, distance, PlatformMask);
 		
@@ -45,6 +51,16 @@ public class PlayerController : MonoBehaviour
 		}
 		
 		Player.velocity = move * Speed + jump;
+
+		transform.localRotation = move.x < 0 ? Quaternion.Euler(0, 0, 0) : Quaternion.Euler(0, 180, 0);
+		
+
+//		_flipSide = (_spriteRenderer.flipX ? (move.x > 0.01f) : (move.x < 0.01f));
+//		if (_flipSide)
+//		{
+//			_spriteRenderer.flipX = !_spriteRenderer.flipX;
+//		}
+
 	}
 
 	private void OnCollisionStay2D(Collision2D other)
