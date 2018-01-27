@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using UnityEditor;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.Scripting.APIUpdating;
 using UnityEngine.UI;
@@ -9,28 +10,27 @@ public class PlayerController : MonoBehaviour
 {
 
 	public Rigidbody2D Player;
-	public int Speed = 5;
-	public int JumpPower = 20;
+	public float Speed = 5f;
+	public float JumpPower = 20f;
 	public bool Ground = true;
 	public LayerMask PlatformMask;
-	public Animation Anim;
-		
+	public Animator Animator = null;
+
+	
 	private bool _flipSide = false;
 	private SpriteRenderer _spriteRenderer;
-	                                 
-
 	private float distance = 20f;
 
+	
 	// Use this for initialization
 	void Start ()
-	{ 
-		
+	{
+		Animator = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate ()
 	{
-		
 		
 		RaycastHit2D hit = Physics2D.Raycast(Player.position, Vector2.down, distance, PlatformMask);
 		
@@ -39,25 +39,25 @@ public class PlayerController : MonoBehaviour
 		if (hit.collider == null) hit.distance = 0;
 		if (Input.GetButtonDown("Jump") && hit.distance < 0.9f)
 		{
-			//Debug.Log((Ground));
+			
 			jump = Vector2.up * JumpPower;
-			//InvokeRepeating("Falsing",0.5f,0.1f);
-			//Debug.Log((Ground));
-
-			//Debug.Log(Ground);
+			Animator.SetTrigger("jump");
 		}
+		
 		
 		Player.velocity = move * Speed + jump;
 
 		transform.localRotation = move.x < 0 ? Quaternion.Euler(0, 0, 0) : Quaternion.Euler(0, 180, 0);
+		if (Math.Abs(Player.velocity.x) > 0.01f)
+		{
+			Animator.SetBool("walk", true);
+		}
+		else if (Player.velocity.x == 0)
+		{
+			Animator.SetBool("walk", false);
+		}
 		
-
-//		_flipSide = (_spriteRenderer.flipX ? (move.x > 0.01f) : (move.x < 0.01f));
-//		if (_flipSide)
-//		{
-//			_spriteRenderer.flipX = !_spriteRenderer.flipX;
-//		}
-
+		
 	}
 
 	private void OnCollisionStay2D(Collision2D other)

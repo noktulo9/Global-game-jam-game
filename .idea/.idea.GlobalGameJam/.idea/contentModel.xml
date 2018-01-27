@@ -14,7 +14,10 @@
           </e>
         </e>
         <e p="scripts" t="Include">
+          <e p="DogController.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
+          <e p="xVelController.cs" t="Include" />
+          <e p="yVelController.cs" t="Include" />
         </e>
       </e>
       <e p="GlobalGameJam.sln" t="IncludeFlat" />
