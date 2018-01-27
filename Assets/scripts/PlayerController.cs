@@ -45,10 +45,6 @@ public class PlayerController : MonoBehaviour
 		}
 		
 		Player.velocity = move * Speed + jump;
-		
-		HorAx.text = "X Velocity: " + Player.velocity.x;
-		VerAx.text = "Y Velocity: " + Player.velocity.y;
-		Dist.text = "Distance to ground: " + hit.distance;
 	}
 
 	private void OnCollisionStay2D(Collision2D other)
